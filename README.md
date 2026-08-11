@@ -99,7 +99,7 @@ Typefaces are loaded from the Google Fonts CDN, not redistributed; see
 
 ## Journal
 
-- 2026-08-12 — [Why every AI delivery gets a drawing](https://github.com/madebysaira) (journal)
+- 2026-08-12: [Every AI video delivery comes with a drawing](https://www.madebysaira.me/blog/ai-video-diagrams/)
 
 ---
 
