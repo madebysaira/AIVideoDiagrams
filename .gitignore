@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Chromium temp screenshots
+/tmp/
+
+# Editors
+*.swp
+.idea/
+.vscode/

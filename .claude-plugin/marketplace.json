@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    {
+      "name": "ai-video-diagrams",
+      "version": "0.1.0",
+      "description": "Fourteen diagram types for AI video production, one design system.",
+      "source": "https://github.com/madebysaira/AIVideoDiagrams",
+      "categories": ["design", "documentation"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ai-video-diagrams",
+  "version": "0.1.0",
+  "description": "The madebysaira diagram system: 14 SVG types on one design system, for every client delivery.",
+  "commands": {
+    "pick-diagram": {
+      "description": "Choose the right diagram type for a client request",
+      "args": "what the client needs to understand",
+      "path": "commands/pick-diagram.md"
+    },
+    "make-diagram": {
+      "description": "Scaffold a new diagram from the template",
+      "args": "type · title",
+      "path": "commands/make-diagram.md"
+    },
+    "review-diagrams": {
+      "description": "Run the review gate over every diagram",
+      "path": "commands/review-diagrams.md"
+    }
+  }
+}

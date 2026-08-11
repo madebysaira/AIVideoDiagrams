@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style board — AIVideoDiagrams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Poppins:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#181b24; --paper-2:#20242f; --card:#232836;
+  --ink:#e8eaf1; --muted:#9da5b8; --soft:#757d92;
+  --rule:rgba(232,234,241,0.13); --rule-solid:rgba(157,165,184,0.30);
+  --accent:#7b73f0; --accent-tint:rgba(123,115,240,0.14);
+  --link:#3aa3c6; --ok:#5fae74; --danger:#d06363;
+  --ink-05:rgba(232,234,241,0.05); --ink-03:rgba(232,234,241,0.03);
+  --ink-02:rgba(232,234,241,0.02); --ink-30:rgba(232,234,241,0.30); --ink-20:rgba(232,234,241,0.20);
+  --muted-10:rgba(157,165,184,0.10); --ok-08:rgba(95,174,116,0.08); --danger-08:rgba(208,99,99,0.08);
+  --title:'Fraunces',Georgia,serif; --sans:'Poppins',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;padding:48px;min-height:100vh}
+svg{display:block;width:100%;height:auto}
+.eyebrow{font-family:var(--mono);font-size:8px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;fill:var(--soft)}
+.node-name{font-family:var(--sans);font-size:12px;font-weight:600;fill:var(--ink)}
+.sublabel{font-family:var(--mono);font-size:9px;fill:var(--soft)}
+.arrow-label{font-family:var(--mono);font-size:8px;letter-spacing:0.04em;fill:var(--muted)}
+.callout{font-family:var(--title);font-style:italic;font-size:14px;fill:var(--muted)}
+.node{fill:var(--card);stroke:var(--ink);stroke-width:1}
+.focal{fill:var(--accent-tint);stroke:var(--accent);stroke-width:1.2}
+.store{fill:var(--ink-05);stroke:var(--muted);stroke-width:1}
+.external{fill:var(--ink-03);stroke:var(--ink-30);stroke-width:1}
+.input{fill:var(--muted-10);stroke:var(--soft);stroke-width:1}
+.optional{fill:var(--ink-02);stroke:var(--ink-20);stroke-width:1;stroke-dasharray:4,3}
+.ok{fill:var(--ok-08);stroke:var(--ok);stroke-width:1}
+.danger{fill:var(--danger-08);stroke:var(--danger);stroke-width:1}
+.edge{stroke:var(--muted);stroke-width:1.2;fill:none;stroke-linejoin:round}
+.edge-link{stroke:var(--link);stroke-width:1.2;fill:none}
+.edge-accent{stroke:var(--accent);stroke-width:1.2;fill:none}
+.edge-thin{stroke:var(--soft);stroke-width:0.8;fill:none}
+.stage{fill:var(--paper-2);stroke:var(--rule);stroke-width:1}
+</style>
+</head>
+<body>
+<svg viewBox="0 0 1200 720" role="img" aria-label="Style board: palette, type, motion and grade">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/>
+    </marker>
+    <marker id="arrow-link" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--link)"/>
+    </marker>
+  </defs>
+
+  <text class="eyebrow" x="40" y="48">Style board · editorial warm</text>
+
+  <!-- palette -->
+  <text class="eyebrow" x="60" y="168">Palette</text>
+  <rect x="60" y="200" width="100" height="100" rx="4" fill="#f6f4ee" stroke="var(--rule)" stroke-width="1"/>
+  <text class="sublabel" x="110" y="318" text-anchor="middle">#f6f4ee bone</text>
+  <rect x="176" y="200" width="100" height="100" rx="4" fill="#20242f" stroke="var(--rule)" stroke-width="1"/>
+  <text class="sublabel" x="226" y="318" text-anchor="middle">#20242f ink</text>
+  <rect x="292" y="200" width="100" height="100" rx="4" fill="#4a6b3a" stroke="var(--rule)" stroke-width="1"/>
+  <text class="sublabel" x="342" y="318" text-anchor="middle">#4a6b3a olive</text>
+  <rect x="60" y="340" width="100" height="100" rx="4" fill="#f0d9b8" stroke="var(--rule)" stroke-width="1"/>
+  <text class="sublabel" x="110" y="458" text-anchor="middle">#f0d9b8 skin</text>
+  <rect x="176" y="340" width="100" height="100" rx="4" fill="#c9a24b" stroke="var(--rule)" stroke-width="1"/>
+  <text class="sublabel" x="226" y="458" text-anchor="middle">#c9a24b gold</text>
+  <rect x="292" y="340" width="100" height="100" rx="4" fill="#4f46e5" stroke="var(--rule)" stroke-width="1"/>
+  <text class="sublabel" x="342" y="458" text-anchor="middle">#4f46e5 accent</text>
+
+  <!-- type -->
+  <text class="eyebrow" x="430" y="168">Type</text>
+  <text x="430" y="256" font-family="var(--title)" font-size="44" font-weight="600" fill="var(--ink)">Sunlight &amp; Silk</text>
+  <text class="sublabel" x="430" y="282">Fraunces 600 · display · headlines</text>
+  <line class="edge-thin" x1="430" y1="306" x2="770" y2="306"/>
+  <text x="430" y="356" font-family="var(--sans)" font-size="17" fill="var(--ink)">The cut lands soft, warm and human.</text>
+  <text class="sublabel" x="430" y="382">Poppins 400 · captions + UI</text>
+  <line class="edge-thin" x1="430" y1="406" x2="770" y2="406"/>
+  <text x="430" y="452" font-family="var(--mono)" font-size="13" fill="var(--ink)">01:12:04:18 · take 7 · v03</text>
+  <text class="sublabel" x="430" y="478">IBM Plex Mono · timecode + specs</text>
+
+  <!-- motion & grade -->
+  <text class="eyebrow" x="810" y="168">Motion &amp; grade</text>
+  <line class="edge-thin" x1="810" y1="280" x2="1150" y2="280"/>
+  <text class="sublabel" x="810" y="258">Camera</text>
+  <text class="node-name" x="1140" y="258" text-anchor="end">locked-off, slow push</text>
+  <line class="edge-thin" x1="810" y1="326" x2="1150" y2="326"/>
+  <text class="sublabel" x="810" y="304">Grain</text>
+  <text class="node-name" x="1140" y="304" text-anchor="end">none</text>
+  <line class="edge-thin" x1="810" y1="372" x2="1150" y2="372"/>
+  <text class="sublabel" x="810" y="350">Grade</text>
+  <text class="node-name" x="1140" y="350" text-anchor="end">muted, soft shadows</text>
+  <line class="edge-thin" x1="810" y1="418" x2="1150" y2="418"/>
+  <text class="sublabel" x="810" y="396">Speed</text>
+  <text class="node-name" x="1140" y="396" text-anchor="end">×0.9, floaty</text>
+  <line class="edge-thin" x1="810" y1="464" x2="1150" y2="464"/>
+  <text class="sublabel" x="810" y="442">LUT</text>
+  <text class="node-name" x="1140" y="442" text-anchor="end">editorial warm</text>
+
+  <!-- style block -->
+  <text class="eyebrow" x="60" y="540">Style block · paste into any prompt</text>
+  <rect class="focal" x="60" y="560" width="1110" height="72" rx="8"/>
+  <text x="84" y="605" font-family="var(--mono)" font-size="14" fill="var(--ink)">soft daylight · 35mm · muted grade · slow push · no grain · warm skin tones</text>
+
+  <text class="callout" x="40" y="680">Six swatches and a style block beat forty reference images in a prompt.</text>
+</svg>
+</body>
+</html>

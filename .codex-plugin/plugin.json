@@ -1,0 +1,20 @@
+{
+  "name": "ai-video-diagrams",
+  "version": "0.1.0",
+  "description": "Madebysaira's diagram system for AI video production: 14 SVG diagram types on one design system.",
+  "author": "madebysaira",
+  "source": "https://github.com/madebysaira/AIVideoDiagrams",
+  "categories": ["design", "documentation", "video"],
+  "commands": {
+    "pick-diagram": {
+      "description": "Choose the right diagram type for a client request",
+      "args": "what the client needs to understand",
+      "path": "commands/pick-diagram.md"
+    },
+    "make-diagram": {
+      "description": "Scaffold a new diagram from the template",
+      "args": "type · title",
+      "path": "commands/make-diagram.md"
+    }
+  }
+}
